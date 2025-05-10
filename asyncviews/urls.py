@@ -4,6 +4,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', views.async_view, name="api"),
-    path('sync/', views.sync_view, name="sync"),
+    path('timer/', views.timer, name='timer'),
+    path('async_view/', views.async_view, name='async_view'),
+    path('sync_view/', views.sync_view, name='sync_view'),
+    path('', views.home),
 ]
